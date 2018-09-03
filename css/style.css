@@ -1,6 +1,6 @@
 
 /* Fonts *//* Fonts *//* Fonts *//* Fonts *//* Fonts *//* Fonts *//* Fonts */
-/* latin */
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -9,7 +9,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* latin */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -34,21 +33,23 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-font-family: 'Mukta', sans-serif;
+/* font-family: 'Mukta', sans-serif;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Muli', sans-serif;
+font-family: 'Muli', sans-serif; */
+
 /* Base Styles */
+
 html {
-  font-size: 18px;
+  font-size: 16px;
+  color: #404040;
+  font-family: 'Mukta', sans-serif;
 }
 
-.flex-container {
+.flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
-
-/* Header *//* Header *//* Header *//* Header *//* Header *//* Header */
+/* Header Section */
 
 header {
   height: 64px;
@@ -57,10 +58,12 @@ header {
   z-index: 1;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 }
 
 header img {
   height: 48px;
+  width: auto;
 }
 
 .logo {
@@ -95,4 +98,60 @@ header img {
 .navigation a {
   text-decoration: none;
   color: #404040;
+}
+
+/* Banner Section */
+.banner {
+  max-width: 100%;
+  /*padding: 32px 24px;*/
+  /*justify-content: center;*/
+  align-items: center;
+  padding-top: 64px;
+  background-color: #E8E8E8;
+}
+
+
+.left {
+  /* background-color: blue; */
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  /* background-color: green; */
+  height: 500px;
+  width: 300px;
+  /*margin-left: 24px;*/
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+}
+
+.right h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #404040;
+  width: 300px;
+  text-align: center;
+  padding: 18px 0;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
