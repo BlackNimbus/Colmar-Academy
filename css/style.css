@@ -178,6 +178,7 @@ header img {
   margin: 20px 0;
   color: #787878;
   font-weight: lighter;
+  line-height: 1.2rem;
 }
 
 .article span {
@@ -239,6 +240,7 @@ header img {
   font-size: 1rem;
   color: #787878;
   font-weight: lighter;
+  line-height: 1.2rem;
 }
 
 .supporting a {
@@ -249,4 +251,66 @@ header img {
 
 .learn:hover {
   background-color: #E8E8E8;
+ }
+
+ /* LEARNING SECTION */
+
+ .learning {
+   background-color: #E8E8E8;
+   color: #404040;
+   width: 100%;
+ }
+
+ .header {
+   text-align: center;
+   font-size: 48px;
+   font-weight: bold;
+   padding-top: 32px;
+ }
+
+ .classes {
+   max-width: 100%;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 32px 72px;
+ }
+
+ .class {
+   flex-direction: column;
+   width: 30%;
+   height: auto;
+   background-color: white;
+   margin-bottom: 32px;
+ }
+
+ .img-container {
+   width: 100%;
+   height: auto;
+ }
+
+ .img-container img {
+   width: 100%;
+ }
+
+ .class-info {
+   padding: 1rem;
+ }
+
+ .class-info h1 {
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+
+ .class-info h2 {
+   font-size: 1.25rem;
+   margin: 16px 0px;
+   color: #787878;
+   font-weight: lighter;
+ }
+
+ .class-info p {
+   font-size: 1rem;
+   line-height: 1.5rem;
+   color: #787878;
+   font-weight: lighter;
  }
