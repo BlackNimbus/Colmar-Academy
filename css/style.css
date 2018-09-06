@@ -140,7 +140,7 @@ header img {
 
 .right p {
   font-size: 1.5rem;
-  margin: 30px 0px;
+  margin: 32px 0px;
 }
 
 .button {
@@ -158,6 +158,7 @@ header img {
   width: 100%;
   justify-content: center;
   color: #404040;
+  background-color: #F5F5F5;
 }
 
 .article {
@@ -198,7 +199,7 @@ header img {
 }
 
 .info {
-  border-left: 1px solid #E8E8E8;;
+  border-left: 1px solid #E8E8E8;
   width: 40%;
   flex-direction: column;
   padding-bottom: 32px;
@@ -265,14 +266,14 @@ header img {
    text-align: center;
    font-size: 48px;
    font-weight: bold;
-   padding-top: 32px;
+   padding: 32px 0px;
  }
 
  .classes {
    max-width: 100%;
    flex-wrap: wrap;
    justify-content: space-around;
-   padding: 32px 72px;
+   padding: 0px 72px 32px 72px;
  }
 
  .class {
@@ -313,4 +314,47 @@ header img {
    line-height: 1.5rem;
    color: #787878;
    font-weight: lighter;
+ }
+
+ /* THESIS SECTION */
+
+ .thesis {
+   width: 100%;
+   justify-content: center;
+   color: #404040;
+   background-color: #F5F5F5;
+ }
+
+ .thesis .article {
+   padding: 0px 24px 32px 24px;
+ }
+
+ .vid-container {
+   width: 100%;
+ }
+
+ .vid-container video {
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
+
+.thesis .article h1 {
+  font-size: 1.5rem;
+}
+
+/* FOOTER SECTION */
+ footer {
+   justify-content: space-between;
+   color: #787878;
+   font-size: 0.75rem;
+   padding: 16px 24px;
+   background-color: #F5F5F5;
+   border-top: 1px solid #E8E8E8;
+ }
+
+ footer a {
+   text-decoration: none;
+   color: #787878;
+   margin-left: 16px;
  }
