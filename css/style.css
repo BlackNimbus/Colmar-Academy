@@ -185,7 +185,6 @@ header {
 @media only screen and (max-width: 750px) {
   .banner .flex {
     flex-direction: column;
-    align-items: center;
   }
 
   .left {
@@ -397,16 +396,14 @@ header {
 
  .mobile-classes {
    flex-direction: column;
-   width: 100%;
    text-align: center;
    padding: 0px 16px 32px 16px;
  }
 
  .mobile-class {
    padding: 16px 24px;/* Why does left and right padding go outside the body?*/
-   background-color: grey;
+   background-color: #808080;
    margin-bottom: 12px;
-   width: 100%;
    font-size: 2rem;
    display: none;
  }
@@ -415,7 +412,7 @@ header {
    .classes {
      display: none;
    }
-
+   
    .mobile-class {
      display: flex;
    }
