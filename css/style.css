@@ -121,8 +121,8 @@ header {
 }
 
 .mobile img {
-  height: 48px;
-  width: 48px;
+  height: 36px;
+  width: 36px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -180,6 +180,27 @@ header {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .banner .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 32px 16px;/* Why is my padding outside the body? */
+  }
+
+  .button {
+    width: 100%;
+  }
 }
 
 /* ABOUT SECTION */
@@ -247,7 +268,7 @@ header {
 }
 
 .clip img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -281,6 +302,35 @@ header {
 
 .learn:hover {
   background-color: #E8E8E8;
+ }
+
+ @media only screen and (max-width: 750px) {
+   .about .article {
+     display: none;
+   }
+
+   .about .info {
+     width: 100%;
+     border: none;
+   }
+
+   .about .learn {
+     flex-direction: column;
+     border: none;
+   }
+
+   .about .clip {
+     width: 100%
+   }
+
+   .about .clip .img {
+     width: 100%;
+   }
+
+   .about .supporting {
+     width: 100%;
+     margin-top: 16px;
+   }
  }
 
  /* LEARNING SECTION */
@@ -345,6 +395,33 @@ header {
    font-weight: lighter;
  }
 
+ .mobile-classes {
+   flex-direction: column;
+   width: 100%;
+   text-align: center;
+   padding: 0px 16px 32px 16px;
+ }
+
+ .mobile-class {
+   padding: 16px 24px;/* Why does left and right padding go outside the body?*/
+   background-color: grey;
+   margin-bottom: 12px;
+   width: 100%;
+   font-size: 2rem;
+   display: none;
+ }
+
+ @media only screen and (max-width: 750px) {
+   .classes {
+     display: none;
+   }
+
+   .mobile-class {
+     display: flex;
+   }
+
+ }
+
  /* THESIS SECTION */
 
  .thesis {
@@ -372,6 +449,22 @@ header {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 750px) {
+  .thesis .info {
+    display: none;
+  }
+
+  .thesis .article p, .thesis .article h1 {
+    display: none;
+  }
+
+  .thesis .article {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 32px;
+  }
+}
+
 /* FOOTER SECTION */
  footer {
    justify-content: space-between;
@@ -386,4 +479,10 @@ header {
    text-decoration: none;
    color: #787878;
    margin-left: 16px;
+ }
+
+ @media only screen and (max-width: 750px) {
+   footer {
+     border: none;
+   }
  }
