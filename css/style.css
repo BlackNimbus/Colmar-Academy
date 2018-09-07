@@ -63,14 +63,18 @@ header {
   width: 100%;
   /* position: fixed;
   z-index: 1; */
-  align-items: center;
-  justify-content: space-between;
   background-color: white;
 }
 
-header img {
+.header img {
   height: 48px;
   width: auto;
+}
+
+.desktop {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -104,6 +108,31 @@ header img {
 .navigation a {
   text-decoration: none;
   color: #404040;
+}
+
+
+/* MOBILE NAV SECTION */
+
+.mobile {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
+
+.mobile img {
+  height: 48px;
+  width: 48px;
+}
+
+@media only screen and (max-width: 750px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
 }
 
 /* BANNER SECTION */
