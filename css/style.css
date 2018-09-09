@@ -278,8 +278,6 @@ a .button  {
 }
 
 .mobile-clip {
-  width: 35%;
-  height: auto;
   display: none;
 }
 
@@ -341,6 +339,10 @@ a .button  {
    .about .mobile-clip img {
      width: 100%;
      height: auto;
+   }
+
+   .about .mobile-clip:hover {
+
    }
 
    .about .supporting {
@@ -424,6 +426,10 @@ a .button  {
    font-size: 2rem;
    display: none;
  }
+
+.mobile-class:hover {
+  background-color: #696969;
+}
 
  @media only screen and (max-width: 750px) {
    .classes {
